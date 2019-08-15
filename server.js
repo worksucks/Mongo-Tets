@@ -7,6 +7,8 @@ mongoose.connect('mongodb://localhost/nodeappdatabase', {
 });
 
 //new user Schema
+
+
 const userSchema = new Schema({
     name: String,
     username: { type: String, required: true, unique: true },
